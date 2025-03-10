@@ -1,0 +1,77 @@
+Ejercicio 1. Evaluación de expresiones.
+
+(a) Para cada una de las siguientes expresiones, determinar cuál es su tipo y evaluarla a mano a mano,
+realizando las conversiones de tipos que sean necesarias:
+
+(I) 11 + 2 - tipo: int, output:13
+(II) 11 / 2 - tipo: float, output: 5
+(III) 11 // 2 - tipo: float, output: 5.5
+(IV) 11 % 2 - tipo: int , output: 1
+(V) 1 / 0 - error
+(VI) 1 % 0 - error
+(VII) 11.0 + 2.0 - tipo: float, output:13.0
+(VIII) 'ho' + 'la' - tipo: str, output: 'hola'
+(IX) 'ja' * 3 - tipo: str, output: 'jajaja'
+(X) len('hola') + 6 - tipo: int, output: 10
+(XI) 123 + '123' - error
+(XII) 123 + 123.0 - tipo: float, output: 246.0
+(XIII) 123 + int('123') - tipo: int, output: 246
+(XIV) str(123) + '123' - tipo: str, output: '123123'
+
+
+(c) ¿Qué diferencia hay entre los valores y los tipos de las expresiones (I) y (VII)?
+11 + 2 y 11.0 + 2.0
+La diferencia está en el tipo de dato, en el caso del punto flotante al resultado a diferencia del entero se le agrega un .0
+
+(d) Comparar el resultado de evaluar las expresiones (II) y (III). ¿Cuál símbolo corresponde a
+la división entera, y cuál a la división de float? ¿Qué rol tiene el símbolo % respecto de la
+división entera?
+11 / 2 y 11 // 2
+ / = division float
+ // = division entera
+el % con respecto de la division entera nos devuelve el resto, osea lo que ellos estarian excluyendo
+
+(e) ¿A qué se deben los errores de las expresiones (V), (VI) y (XI)?
+1/0, 1%0 y 123 + '123'
+en el caso de V y VI es el mismo problema, no se puede dividir por cero. Para XI es un type error porque estamos intentando sumar un tipo int con un str, los unicos tipos datos que se pueden combinar para sumar, etc son floar e int
+
+(f) ¿Qué ocurrió exactamente al evaluar las expresiones (XII), (XIII) y (XIV)?
+123 + 123.0, 123 + int('123'), str(123) + '123'
+Como mencione en el punto anterior 123 + 123.0 es posible ya que son tipos de datos compatibles y da un resultado con .0 porque el 123.0 lo vuelve float. Para 123 + int('123') estas conviertiendo un str en int por lo tanto ambos son int y da un resultado int, en str(123) + '123' es parecido solo que un int lo convertis en str y se vuelve una suma de str lo que produce una concatenacion y da un resultado str.
+
+Ejercicio 2. Representación de números reales en punto flotante.
+
+(a) Evaluar las siguientes expresiones, primero a mano y después en una consola ipython:
+
+(I) (10 / 3 - 3) * 3 - 1 / output: 4.440892098500626e-16
+(II) 0.00000001 + 1000000000 - 1000000000 / output: 0.0
+
+(b) ¿Los resultados son los esperados? ¿A qué se debe esto?
+No son para nada los esperados, en el caso de II hubiese esperado un 0.0 pero no se porque da 4.44...
+Para II tiene un poco mas de sentido aunque hubiese esperado un 0.000000001
+Todo esto se debe a la perdida de precision que tiene ya que no se queda con el numero original màs bien lo acorta porque la memoria ram no puede soportarlo, estos numeros que no se pierden hacen que el resultado cambie significamente
+(c) En (II), reemplazar el primer valor literal (0.00000001) por valores cada vez más grandes
+(ej.: (0.0000001, 0.000001, ..., hasta 0.1), reevaluar y estudiar los resultados.
+
+lo cambie por 0.0000001 y me dio 1.1920928955078125e-07
+lo cambie por 0.000001 y me dio 9.5367431640625e-07
+lo cambie por 0.00001 y me dio 1.0013580322265625e-05
+lo cambie por 0.0001 y me dio 0.00010001659393310547
+lo cambie por 0.001 y me dio 0.001000046730041504
+lo cambie por 0.01 y me dio 0.009999990463256836
+lo cambie por 0.1 y me dio 0.10000002384185791
+
+Puede ver que cuando el numero tiene mas ceros las probabilidades de que al frente haya un numero que no sea cero son mayores y el resultado es mucho mas largo
+
+
+Ejercicio 3. A partir del string '123.45', escribir expresiones que arrojen como resultado los
+siguientes valores:
+
+(a) El float 123.45.
+print(float('123.45'))
+
+(b) El entero 123.
+print(int('123.45'))
+
+(c) El float 0.45.
+print(float((str(float('123.45') - 123.0)[0:4]))) 

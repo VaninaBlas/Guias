@@ -1,6 +1,10 @@
 
 print("EjercicioA:")
 def cant_a(s:str) -> int:
+    """
+    Requiere : Nada
+    Devuelve : La cantidad de ocurrencias de 'a' en s.
+    """
     contador:int=s.count("a")
     return contador
 
@@ -9,6 +13,11 @@ print(ejemplo1)
 print("-----------------------------------------------------")
 print("EjercicioB:")
 def mayus_n ( s :str ) -> str :
+    """
+    Requiere : Nada
+    Devuelve : Una copia de s pero con todas las ocurrencias
+    de la letra 'n' en mayúscula .
+    """
     cadena:str=s.replace('n', 'N')
     return cadena
 ejemplo2:str="libron"
@@ -19,6 +28,10 @@ print("----------------------------------------------------------")
 print("EjercicioC")
 import math
 def raiz_entera ( n : int) -> int:
+    """
+    Requiere : n >=0
+    Devuelve : La parte entera de la raíz cuadrada de n.
+    """
     raiz:int= int(math.sqrt(n))
     return raiz
 

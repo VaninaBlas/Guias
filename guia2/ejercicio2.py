@@ -1,4 +1,8 @@
 def f2c(tempFahr: float) -> float:
+    """
+    Requiere:nada 
+    Devuelve: la temp en celcius
+    """
     cel:float = 5/9 * (tempFahr-32)
     return cel
 

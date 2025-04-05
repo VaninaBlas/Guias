@@ -63,3 +63,60 @@ Demostrar las siguientes propiedades usando tablas de verdad:
 | F    | F   | 
 
 **son iguales**
+
+(c) p ∨ (p ∧ q) = p (absorción)
+
+
+| p | q |  p ∧ q | p ∨ (p ∧ q) |
+|----------|----------|----------|----------|
+| V| V  |    V | V |
+| V| F   |   F| V|
+| F | V  | F|F|
+| F | F  | F|F|
+
+
+| p ∨ (p ∧ q)| p | 
+|----------|----------|
+| V    | V   | 
+| V    | V   |
+| F    | F   | 
+| F    | F   | 
+
+
+**son iguales**
+
+(d) p ∧ (p ∨ q) = p (absorción)
+
+| p | q |p ∨ q | p ∧ (p ∨ q) |
+|----------|----------|----------|----------|
+| V| V  |  V| V |
+| V| F   |V| V|
+| F | V  |V|F|
+| F | F  |F|F|
+
+
+| p ∧ (p ∨ q)| p | 
+|----------|----------|
+| V    | V   | 
+| V    | V   |
+| F    | F   | 
+| F    | F   | 
+
+
+**son iguales**
+
+(e) ¬(p ∨ q) = ¬p ∧ ¬q (De Morgan)
+
+| p | q |p ∨ q | ¬(p ∨ q)| ¬p| ¬q|¬p ∧ ¬q
+|----------|----------|----------|----------|----------|----------|----------|
+| V| V  | V| F| F| F|F
+| V| F   | V| F| F| V|F
+| F | V  | V| F| V| F|F
+| F | F  | F| V| V| V|V  
+
+| p ∧ (p ∨ q)| p | 
+|----------|----------|
+| F    | F   | 
+| F    | F   |
+| F    | F   | 
+| V    | V   | 

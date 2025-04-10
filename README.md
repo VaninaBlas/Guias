@@ -5,3 +5,6 @@ Guias de los ejercicios para la materia Introduccion a la Programación
 
 ## Guía 2
 [Descargar guia2.pdf](https://github.com/VaninaBlas/Guias/raw/main/guia2/guia2.pdf)
+
+## Guía 3
+[Descargar guia3.pdf](https://github.com/VaninaBlas/Guias/raw/main/guia3/guia3.pdf)

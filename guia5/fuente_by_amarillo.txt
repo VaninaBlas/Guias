@@ -1,0 +1,10 @@
+#como robar churus
+i:int=0 #Indice 
+cant_churus:int=10 # churus escondidos
+horas_cursada:int=10
+#debe hacerse en horario de cursada
+while(i<horas_cursada):
+  # se debe robar una cada 2 horas (por la siesta)
+  cant_churus=cant_churus-1
+  i=i+2
+print(cant_churus) # y nunca se va a dar cuenta

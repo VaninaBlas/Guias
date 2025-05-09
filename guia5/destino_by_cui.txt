@@ -1,0 +1,10 @@
+
+i:int=0 
+cant_churus:int=10 
+horas_cursada:int=10
+
+while(i<horas_cursada):
+  
+  cant_churus=cant_churus-1
+  i=i+2
+print(cant_churus) 

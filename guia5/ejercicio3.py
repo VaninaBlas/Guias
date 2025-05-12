@@ -1,4 +1,8 @@
 def eliminar_comentarios(filename_fuente:str, filename_destino:str):
+    """
+    Requiere:nada
+    Devuelve: el archivo1 pero sin sus comentarios
+    """
     f_fuente=open(filename_fuente, "r")
     f_destino=open(filename_destino, "w")
     for linea in f_fuente:
@@ -7,6 +11,10 @@ def eliminar_comentarios(filename_fuente:str, filename_destino:str):
     return f_destino
 
 def por_linea (s:str):
+    """
+    Requiere:nada
+    Devuelve: la linea con el contenido hasta #
+    """
     i=0
     linea_limpia=""
     while(i<len(s)):

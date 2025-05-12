@@ -20,6 +20,10 @@ print(cuadrado_n_astericos(n))
 (b) Dado un string s, imprimir por pantalla la inversa de s. 
 """
 def inversa_texto(texto:str)->str:
+    """
+    Requiere: nada
+    Devuelve:imprime por pantalla la inversa de s
+    """
     i:int=1
     vr:str=""
     while(i<=len(texto)):

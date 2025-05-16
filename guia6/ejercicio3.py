@@ -196,26 +196,39 @@ Inv: vr vale la suma de coincidencias con a en los primeros i caracteres de ls
 #  ['a','bb','c','','ddd','']. No usar split
 
 def cortar_texto(t:str, sep:str)-> str:
+    """
+    Requiere: len(sep)=1
+    Devuelve: el texto que hay entre la ultima aparicion de sep y el ultimo
+    elemento de t, si no hay sep en t devuelve el texto entero
+    """
     i:int=1
     vr:str=""
     texto:str=""
-    while(i<len(t)):
-        if(t[-i] == sep):
-            vr=texto
+    while(i<=len(t)):
+        if(t[-i] == sep ):
+            vr=vr +texto
             i=len(t)
-        texto= t[-i] + texto 
+        if not(sep in t):
+            vr=t
+            i=len(t)
+        texto= t[-i] + texto
         i=i+1
     return vr
 
 
 def texto_separado_en_sep(txt:str, sep:str) -> list[str]:
     """
-    Requiere:
-    Devuelve:
+    Requiere: len(sep)=1
+    Devuelve: una nueva lista, donde separa txt en cada aparición de sep
     """
     i:int=0
     vr:list[str]=[]
+    texto:str=""
     while(i<len(txt)):
         if(txt[i]==sep):
-            vr.append(cortar_texto(txt[i], sep))
+            vr.append(cortar_texto(texto, sep))
+        texto=texto+txt[i]
+        i=i+1
+    return vr
+texto_separado_en_sep('a;bb;c;;ddd;', ";") # Devuelve ['a', 'bb', 'c', '', 'ddd']
 

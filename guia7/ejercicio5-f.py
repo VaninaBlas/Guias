@@ -39,24 +39,36 @@ texto_separado_en_sep('a;bb;c;;ddd;', ";") # Devuelve ['a', 'bb', 'c', '', 'ddd'
 linea 7-o(1)
 linea 8-o(1)
 linea 9-o(1)
+
 linea 10-o(len(t))
-linea 11-o(1)
+if / o(max(len(t), 1,1))
+linea 11-o(len(t)) ??
 linea 12-o(1)
 linea 13-o(1)
-linea 14-o() /????
+if / o(max(len(t),1,1))
+linea 14-o(len(t)) /????
 linea 15-o(1)
 linea 16-o(1)
+
 linea 17-o( ) /??????
+
 linea 18-O(1)
+
 linea 19-o(1)
+
+------------------------------------------------------------------------
 
 linea 27-O(1)
 linea 28-o(1)
 linea 29-o(1)
+
 linea 30-o(len(txt))
-linea 31-o() /??????????
+if / o(max(len(txt), o()))
+linea 31-o(len(txt)) 
 linea 32-o() /?????
-linea 33-o() /??????
+-
+linea 33-o() /?????? / o(len(txt))
 linea 34-o(1) 
+
 linea 35-o(1)
 """

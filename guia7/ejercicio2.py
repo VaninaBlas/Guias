@@ -7,7 +7,7 @@
 import random
 
 def llaves_cofre(c:list[str],l:list[str]):
-  llave_maestra:int= random.randint(0,len(l)-1)
+  llave_maestra:int= random.randint(0,len(l)-1) #o(1)
   i:int=0
   while(i<len(l)):
     if(i == llave_maestra):
@@ -25,9 +25,10 @@ llaves_cofre(cofres,llaves)
 # se abre el cofre
 # encontraste la llave
 """
-linea 10- o(len(L)-1)
+linea 10- o(len(L)-1) / o(n) / o(1)
 linea 11- o(1)
 linea 12-o(L)
+if / o(max(1,1,1))
 linea 13-o(1)
 linea 14-o(1)
 linea 15-o(1)

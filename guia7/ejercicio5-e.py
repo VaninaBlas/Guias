@@ -15,8 +15,10 @@ def contar_caracteres(ls:list[str])->int:
 """
 linea 9-o(1)
 linea 10-o(1)
+
 linea 11-o(len(ls))
-linea 12-o(1)
+linea 12-o(1) / o(len(ls))
 linea 13-o(1)
+
 linea 14-o(1)
 """

@@ -32,26 +32,34 @@ def verificar_lista_ordenada_creciente(l:list[int])->bool:
 def cofre_ordenado(cofres:list[list[int]])-> int:
   vr:int=0
   for i in range(0,len(cofres)):
-    if(verificar_lista_ordenada_creciente(cofres[i])):
+    if(verificar_lista_ordenada_creciente(cofres[i])): #o(l)
       vr=i
-      break
+      break #o(1)
   return vr+1
 
 cofres:list[list[int]]=[[4,2,2,4],[9,6,7,8,9],[10,11,12,13,14,15]]
 print("el cofre con naipes ordenados es el numero", str(cofre_ordenado(cofres)))
 """
 linea 25- o(1)
+
 linea 26- o(len(L))
-Que hacer con el if
-linea 27-o(len(L))
+Que hacer con el if, o(max(1,1,1)) 
+linea 27-o(len(L)) / o(1)
 linea 28- o(1)
 linea 29-o(1)
+
 linea 30-o(1)
 
+
+
+
 linea 33- o(1)
+
 linea 34- o(len(cofres))
-linea 35- o(len(cofres))
+if / o(max(len(l), 1, 1))
+linea 35- o(len(l))
 linea 36- o(1)
 linea 37-o(1)
+
 linea 38-o(1)
 """

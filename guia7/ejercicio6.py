@@ -26,18 +26,24 @@ def sort_inverso(A:list[int]):
     """
     Devuelve: ordena(modifica) la lista de menor a mayor
     """
-    for i in range(len(A),0,-1):
-        sublista:list[int]=A[:i]
+    for i in range(len(A),0,-1): #o(n)
+        sublista:list[int]=A[:i] #o(n)
         pm:int=pos_mayor(sublista)
         (A[i-1], A[pm])=(A[pm], A[i-1])
 
 """
 linea 19-o(1)
+
 linea 20-o(len(l))
-linea 21-o(1)
+if / o(max(1,1))
+linea 21-o(1) ??
 linea 22-o(1)
+
 linea 23-o(1)
 
+------------------------------------------------------------------
+
+??????????????????
 linea 29-o(len(a))
 linea 30-o(i)
 linea 31-o(i)

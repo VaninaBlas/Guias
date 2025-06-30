@@ -16,9 +16,13 @@ dentro("a","casa")
 """
 linea 7- o(1)
 linea 8- o(1)
+
 linea 9- o(len(c2))
+if/ o(max(len(c2), 1))
 linea 10- o(len(c2)) /??????
 linea 11-o(1)
+
 linea 12- o(1)
+
 linea 13- o(1)
 """

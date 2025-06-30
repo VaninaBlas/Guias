@@ -19,9 +19,13 @@ primero_n_naturales(3) # Devuelve [1,3,5]
 """
 linea 10-o(1)
 linea 11-o(1)
+
 linea 12-o(n^2)
+if / o(max(1,1))
 linea 13-o(1)
 linea 14-o(1)
+
 linea 15-o(1)
+
 linea 16-o(1)
 """

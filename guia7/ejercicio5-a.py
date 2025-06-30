@@ -20,8 +20,10 @@ print(inversa_texto(texto))
 """
 linea 10- o(1)
 linea 11-o(1)
+
 linea 12-o(len(texto))
-linea 13- o() /????
+linea 13- o(1) /????
 linea 14- o(1)
+
 linea 15- o(1)
 """

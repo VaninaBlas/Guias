@@ -19,8 +19,10 @@ elementos_lista_n_sumado([1,9,7,7],10) # Devuelve [11, 19, 17, 17]
 """
 linea 11-o(1)
 linea 12-o(1)
+
 linea 13-o(len(ls))
-linea 14-o(1)
+linea 14-o(1) ???
 linea 15-o(1)
+
 linea 16-o(1)
 """

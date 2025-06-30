@@ -13,7 +13,7 @@
 import random
 
 def llaves_cofre(c:list[str],l:list[str]):
-  llave_maestra:int= random.randint(0,len(l)-1)
+  llave_maestra:int= random.randint(0,len(l)-1) #o(1)
   vr:str=""
   i:int=0
   while(i<len(l)):
@@ -22,18 +22,24 @@ def llaves_cofre(c:list[str],l:list[str]):
       i=len(l)
     i=i+1
   return vr
+
+
 cofres:list[str]=["a","b","c","d"]
 llaves:list[str]=["llave1","llave2","llave3","llave4","llave5","llave6","llave7"]
 print("Encontro la llave, es:",llaves_cofre(cofres,llaves))
 
 """
-linea 16-o(len(l))
+linea 16-o(len(l)) / ??
 linea 17- o(1)
 linea 18-o(1)
+
 linea 19-o(len(l))
+if/ o(max(1,1,1))
 linea 20-o(1)
 linea 21-o(1)
 linea 22-o(1)
+
 linea 23-o(1)
+
 linea 24-o(1)
 """

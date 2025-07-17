@@ -1,0 +1,41 @@
+Primer
+
+linea 2-o(1)
+linea 3 -o(1)
+
+linea 5-o(n)
+linea 6- o(1)
+linea 7-o(n)
+linea 8-o(1)
+linea 9-o(1)
+
+linea 11-o(1)
+
+o(1)+o(1)+ o(n)*(o(1)+o(1)+o(m)+o(1)+o(1)) + o(1)
+= o(1)+o(1)+o(n)*o(max(1,1,m,1,1)) + o(1)
+= o(1)+o(1)+o(n)*o(m)+o(1)
+=o(1)+o(1)+o(n*m)+o(1)
+=o(max(1,1,n*m,1))
+=O(n*m)
+
+
+-Segundo
+
+linea 2-o(1)
+linea 3 -o(1)
+
+linea 5-o(n)
+linea 6- o(1)
+linea 7-o(20)
+linea 8-o(1)
+linea 9-o(1)
+
+linea 11-o(1)
+
+o(1)+o(1)+ o(n)*(o(1)+o(1)+o(20)+o(1)+o(1)) + o(1)
+= o(1)+o(1)+o(n)*o(max(1,1,20,1,1)) + o(1)
+= o(1)+o(1)+o(n)*o(20)+o(1)
+=o(1)+o(1)+o(n.20)+o(1)
+=o(max(1,1,n.20,1))
+=O(n.20)
+=o(n)

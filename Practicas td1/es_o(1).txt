@@ -1,0 +1,12 @@
+Ejercicio 1: ¿Cuales podrıan implementarse en O(1)?
+1. Una funcion que recibe una lista no vacıa de enteros y devuelve si
+los enteros est´an ordenadas de menor a mayor o no.
+2. Una funcion que recibe una lista no vacıa de enteros ordenada de
+menor a mayor y devuelve el elemento mas grande que contiene.
+3. Una funcion que recibe una lista no vacıa de enteros ordenada de
+menor a mayor y devuelve si esta el numero 13 o no.
+4. Una funcion que recibe un string y devuelve si es palındromo o no.
+5. Una funcion que recibe un numero natural y devuelve si es o no
+primo.
+
+Solo es o(1) la 2

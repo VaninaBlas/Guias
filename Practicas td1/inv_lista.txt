@@ -1,0 +1,5 @@
+inv:que se modifica, como se modifica, de donde y hasta donde
+de xs en posiciones pares desde posición 0 hasta i-1 (porque i =i+1 al final)
+
+0_i-1
+0_1
